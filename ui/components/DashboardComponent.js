@@ -80,6 +80,7 @@ const styles = (theme) => ({
   },
   card: {
     height: '100%',
+    boxShadow: '0px 0px 10px grey',
   },
   cardContent: {
     height: '100%',
@@ -87,6 +88,9 @@ const styles = (theme) => ({
   redirectButton: {
     marginLeft: '-.5em',
     color: '#000'
+  },
+  gridPadding: {
+    padding: '8px !important',
   }
 });
 
@@ -531,16 +535,16 @@ class DashboardComponent extends React.Component {
           </Typography>
 
           <Grid container spacing={1}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className={classes.gridPadding}>
               {self.showCard('Kubernetes', showConfigured)}
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className={classes.gridPadding}>
               {self.showCard('Adapters', showAdapters)}
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className={classes.gridPadding}>
               {self.showCard('Grafana', showGrafana)}
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} className={classes.gridPadding}>
               {self.showCard('Prometheus', showPrometheus)}
             </Grid>
             <Grid item xs={12} md={6}>
