@@ -80,7 +80,6 @@ const styles = (theme) => ({
   },
   card: {
     height: '100%',
-    boxShadow: '0px 0px 10px grey',
   },
   cardContent: {
     height: '100%',
