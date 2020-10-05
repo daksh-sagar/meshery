@@ -528,11 +528,10 @@ class DashboardComponent extends React.Component {
       </FormControl>
     );
 
-    const getMetricsContent = () => (
-      <>
-        {showPrometheus} {showGrafana}
-      </>
-    );
+  
+    const getMetricsContent = () => {
+      return (<div>{showPrometheus} {showGrafana}</div>)
+    }
 
     return (
       <NoSsr>
